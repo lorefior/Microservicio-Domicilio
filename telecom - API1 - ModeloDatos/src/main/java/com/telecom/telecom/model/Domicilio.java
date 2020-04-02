@@ -25,6 +25,9 @@ public class Domicilio implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID_DOMICILIO")
 	private Long id;
+	
+	@Column(name = "MU_CALLEJERO")
+	private Long mu_callejero;
 
 	@Column(name = "CALLE")
 	private String calle;
@@ -47,6 +50,14 @@ public class Domicilio implements Serializable{
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public Long getMu_callejero() {
+		return mu_callejero;
+	}
+
+	public void setMu_callejero(Long mu_callejero) {
+		this.mu_callejero = mu_callejero;
 	}
 
 	public String getCalle() {
@@ -72,14 +83,16 @@ public class Domicilio implements Serializable{
 	public void setBarrio(Barrio barrio) {
 		this.barrio = barrio;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Domicilio [id=" + id + ", "
-				+ "calle=" + calle 
-				+ ", numero=" + numero 
+		return "Domicilio [id=" + id + 
+				", mu_callejero=" + mu_callejero + 
+				", calle=" + calle + 
+				", numero=" + numero
 				+ ", barrio=" + barrio + "]";
 	}
 
+	
 
 }
