@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.telecom</groupId>
-	<artifactId>telecom</artifactId>
+	<artifactId>telecom-api6</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>telecom</name>
+	<name>api6</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
